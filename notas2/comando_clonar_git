@@ -1,0 +1,7 @@
+git clone nerea@degestec.com:/git/maxi_bingo/terminal_java.git
+///////////////////////////////////
+git checkout -b develop //crea y te cambia a la rama develop
+///////////////////////////////////
+git pull origin develop // pull de origin a develop.
+//////////////////////////////////
+git branch --set-upstream-to=origin/nerea nerea // establece el pull de la rama origin a la rama nerea

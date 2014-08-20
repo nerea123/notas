@@ -1,0 +1,11 @@
+artisan migrate:make create_sessions_table --table=sessions --create // crear migracion y tabla
+art migrate //ejecutar migraciones
+art generate:model version //generar modelo
+
+crear model
+seeder con el tipo de permiso
+seeder con permisos
+refresh migrate
+crear ruta en routes.php
+asignar permisos a esa ruta config/acl
+crear controller view

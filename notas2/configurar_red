@@ -1,0 +1,21 @@
+sabayon nerea # ifconfig  eth0 172.16.0.45
+sabayon nerea # route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+172.16.0.0      0.0.0.0         255.255.255.0   U     0      0        0 eth0
+sabayon nerea # route add default gw 172.16.0.254
+sabayon nerea # ping www.uv.es
+PING www.uv.es (147.156.1.52) 56(84) bytes of data.
+^C
+--- www.uv.es ping statistics ---
+5 packets transmitted, 0 received, 100% packet loss, time 3999ms
+
+:(
+sabayon nerea # ping www.google.es
+PING www.google.es (173.194.45.56) 56(84) bytes of data.
+64 bytes from par03s12-in-f24.1e100.net (173.194.45.56): icmp_seq=1 ttl=51 time=41.6 ms
+64 bytes from par03s12-in-f24.1e100.net (173.194.45.56): icmp_seq=2 ttl=52 time=44.7 ms
+^C
+--- www.google.es ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 41.602/43.162/44.722/1.560 ms

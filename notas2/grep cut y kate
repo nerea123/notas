@@ -1,0 +1,32 @@
+git status
+
+M app/commands/GettextCommand.php
+ M app/controllers/AdminController.php
+ M app/controllers/BaseResourceController.php
+ M app/controllers/HomeController.php
+ M app/controllers/UserPanelController.php
+M  app/filters.php
+M  app/helpers.php
+MM app/libraries/Validator.php
+
+gs | grep "M app" 				buscamos solo los que empiezen por M app
+
+M app/commands/GettextCommand.php
+ M app/controllers/AdminController.php
+ M app/controllers/BaseResourceController.php
+ M app/controllers/HomeController.php
+ M app/controllers/UserPanelController.php
+MM app/libraries/Validator.php
+
+
+gs | grep "M app" | cut -d " " -f 3				cortamos indicando como delimitador un espacio
+												y cogiendo la 3 columna
+
+app/commands/GettextCommand.php
+app/controllers/AdminController.php
+app/controllers/BaseResourceController.php
+app/controllers/HomeController.php
+app/controllers/UserPanelController.php
+
+
+gs | grep "M app" | cut -d " " -f 3 | xargs kate      abrimos los ficheros anteriores con kate

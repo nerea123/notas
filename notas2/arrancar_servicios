@@ -1,0 +1,16 @@
+Arrancar servicios:
+
+systemctl restart mysqld.service
+systemctl restart php-fpm@5.4.service
+systemctl restart nginx.service
+
+para buscar un servicio
+
+locate service | grep mysq
+
+donde mysq es el nombre del servicio
+
+Para que se arranquen los servicios en el inicio
+
+echo "systemctl restart nginx.service" >> systemd.restart
+
