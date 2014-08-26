@@ -1,0 +1,27 @@
+originales:
+////////////////////////////////////////
+echo $JAVA_HOME
+/home/nerea/.gentoo/java-config-2/current-user-vm
+nerea@sabayon ~ $ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/opt/bin:/usr/x86_64-pc-linux-gnu/gcc-bin/4.7.3:/opt/android-sdk-update-manager/tools:/opt/android-sdk-update-manager/platform-tools:/usr/games/bin
+nerea@sabayon ~ $ echo $JAVAC
+	/home/nerea/.gentoo/java-config-2/current-user-vm/bin/javac
+
+
+añadido en /etc/bash/bashrc
+/////////////////////////////////////////////
+#####Java#####
+export JAVA_HOME=/opt/icedtea-bin-7.2.3.8/bin/java
+export PATH=$PATH:/opt/icedtea-bin-7.2.3.8/bin
+
+
+
+Para ver las vm disponibles
+java-config --list-available-vms
+
+Para establecer una vm
+java-config --set-system-vm oracle-jdk-bin-1.8 siendo oracle-jdk-bin-1.8 el nombre de la vm
+
+El problema era que la vm de mi usuario estaba en una version superior (esta version queda guardada en el manifest por lo que si intentas compilar con una version anterior da error)
+, con esa version no funciona el envio de partidas pero solo puedo cambiar la vm siendo root y solo la cambia para el usuario root
+por lo que de momento solo se puede hacer como root.

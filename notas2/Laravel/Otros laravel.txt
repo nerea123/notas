@@ -1,3 +1,0 @@
-http://www.youtube.com/playlist?list=PLEtcGQaT56chQN6n4byqRIMYnTHpgkG6m videotutoriales 
-
-http://laraveles.com/foro/index.php Foro de laravel
